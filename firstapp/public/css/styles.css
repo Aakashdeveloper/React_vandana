@@ -1,8 +1,14 @@
-header{
-    background:'blue';
+.header{
+    background:seagreen;
+    text-align : center
 }
 
 .logo{
-    color:'#fff';
-    text-Align: 'center'
+    color:skyblue;
+    font-size:15px
+
+}
+
+.newTitle{
+    color:red
 }
