@@ -4,17 +4,31 @@ const newsList = (props) => {
 
     const items = props.newstag.map((item) => {
         return(
-            <div key = {item.id}>
-                <h3 className="newTitle">{item.title}</h3>
-                <h2>{item.feed}</h2>
-            </div>
+        
+                
+                        <tr key = {item.id}>
+                            <td>{item.title}</td>
+                            <td>{item.feed}</td>
+                        </tr>
+                  
+            
         )
     })
 
 
     return(
         <div>
-            {items}
+            <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>News</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       {items}
+                    </tbody>
+                </table>
         </div>
     )
 }
