@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Link} from 'react-router-dom';
 import Posts from './components/posts';
 import Profile from './components/profile';
 import PostItem from './components/postitem.js';
+import LifeCycle from './components/lifecycle';
 
 
 class App extends Component{
@@ -40,6 +41,7 @@ ReactDOM.render(
                         <li><Link to="/">Home</Link></li>
                         <li> <Link to="/posts">Posts</Link></li> 
                         <li><Link to="/profile">Profile</Link></li> 
+                        <li><Link to="/lifecycle">LifeCycle</Link></li> 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -57,6 +59,7 @@ ReactDOM.render(
             <Route exact path="/posts" component={Posts}></Route>
             <Route exact path="/profile" component={Profile}></Route>
             <Route exact path="/posts/1" component={PostItem}></Route>
+            <Route exact path="/lifecycle" component={LifeCycle}></Route>
         </div>
     </BrowserRouter>
     ,document.getElementById('root'))
